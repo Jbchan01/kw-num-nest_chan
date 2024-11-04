@@ -1,6 +1,6 @@
 function avg(numbers) {
     if (!Array.isArray(numbers) || numbers.length === 0) {
-        return "Insufficient parameter!";
+        return "Insufficient parameter!"; // 매개변수가 빈 케이스. NaN 발생.
     }
     let s = numbers.reduce((prev, curr) => prev + curr, 0);
     return s / numbers.length;
